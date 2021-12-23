@@ -1125,9 +1125,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2120218138}
-  - component: {fileID: 2120218137}
-  - component: {fileID: 2120218136}
-  - component: {fileID: 2120218135}
+  - component: {fileID: 2120218141}
+  - component: {fileID: 2120218140}
+  - component: {fileID: 2120218139}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1135,7 +1135,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2120218135
+--- !u!4 &2120218138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120218134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120218139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1149,7 +1164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetX: 0
   offsetY: 0
---- !u!114 &2120218136
+--- !u!114 &2120218140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1171,10 +1186,10 @@ MonoBehaviour:
   SendWindowSize: 4096
   ReceiveWindowSize: 4096
   NonAlloc: 1
-  debugLog: 1
-  statisticsGUI: 1
-  statisticsLog: 1
---- !u!114 &2120218137
+  debugLog: 0
+  statisticsGUI: 0
+  statisticsLog: 0
+--- !u!114 &2120218141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1193,7 +1208,7 @@ MonoBehaviour:
   serverTickRate: 30
   offlineScene: Assets/Scenes/OfflineScene.unity
   onlineScene: Assets/Scenes/SampleScene.unity
-  transport: {fileID: 2120218136}
+  transport: {fileID: 2120218140}
   networkAddress: localhost
   maxConnections: 5
   authenticator: {fileID: 0}
@@ -1201,18 +1216,3 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
---- !u!4 &2120218138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120218134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
